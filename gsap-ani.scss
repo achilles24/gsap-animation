@@ -1,0 +1,201 @@
+.feature-takeover-header {
+  position: relative;
+  margin-top: 128px;
+}
+@media (min-width: 768px) and (max-width: 1139.8px) {
+  .feature-takeover-header {
+    margin-top: 64px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-header {
+    margin-top: 68px;
+  }
+}
+.feature-takeover-header .feature-takeover-sectiontitle {
+  margin-top: 24px;
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-header .feature-takeover-sectiontitle {
+    margin-top: 16px;
+  }
+}
+
+.feature-takeover-storytelling-scroller {
+  margin-top: 92px;
+}
+@media (min-width: 768px) and (max-width: 1139.8px) {
+  .feature-takeover-storytelling-scroller {
+    margin-top: 96px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-storytelling-scroller {
+    margin-top: 40px;
+  }
+}
+.feature-takeover-storytelling-scroller img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1139.8px) {
+  .feature-takeover-storytelling-scroller img {
+    aspect-ratio: 1/1;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-storytelling-scroller img {
+    aspect-ratio: 1/1;
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  height: 100vh; /* Full viewport height */
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section .feature-takeover-image-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section .feature-takeover-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:not(:first-child).img-fullwidth {
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  width: calc(100vw - 9px) !important;
+  max-width: 100vw;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:not(:first-child).img-fullwidth {
+    width: 100vw !important;
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:not(:first-child) img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  scroll-snap-align: start;
+  height: 100vh; /* Full viewport height */
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section.img-fullwidth.first-image {
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  width: calc(100vw - 9px) !important;
+  max-width: 100vw;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease, height 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.3s ease;
+  transition: width 0.5s ease, height 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.3s ease;
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease, filter 0.3s ease;
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease, filter 0.3s ease, -webkit-transform 0.5s ease, -webkit-filter 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section.img-fullwidth.first-image {
+    width: 100vw !important;
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section.img-fullwidth.first-image img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: width 0.5s ease, height 0.5s ease, -webkit-transform 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease, -webkit-transform 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+  scroll-snap-align: start;
+  height: 100vh; /* Full viewport height */
+}
+.feature-takeover-storytelling-scroller .feature-takeover-hero-card {
+  position: absolute;
+  bottom: 0;
+  left: -64px;
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  padding: 48px 64px;
+  width: 426px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+@media (min-width: 768px) and (max-width: 1139.8px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-hero-card {
+    padding: 48px;
+    width: 344px;
+    left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-hero-card {
+    position: relative;
+    margin: 32px auto 48px;
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-hero-card .feature-takeover-hero-card-title {
+  margin-bottom: 8px;
+}
+.feature-takeover-storytelling-scroller .feature-takeover-hero-card .feature-takeover-hero-card-bodycopy {
+  margin-bottom: 24px;
+}
+@media (min-width: 320px) and (max-width: 767.8px) {
+  .feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:not(:first-child) .feature-takeover-hero-card {
+    width: calc(100% - 40px);
+  }
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:first-child .feature-takeover-hero-card {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.feature-takeover-storytelling-scroller .feature-takeover-storytelling-scroller-section:first-child .feature-takeover-hero-card.visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
